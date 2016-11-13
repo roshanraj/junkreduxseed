@@ -1,0 +1,53 @@
+$badge_color :#FF4C3B;
+
+.rosterlistitem{
+
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+   
+    .image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        width: 55px;
+        height: 55px;
+
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            margin: 2px;
+            border: 3px solid #fff;
+            z-index: 20;
+            box-shadow: 0 1px 5px #999;
+        }
+    }
+    .name{
+        display: flex;
+        align-items: center;
+
+        flex-grow: 3;
+
+    }
+    .msgcount{
+
+        display:flex;
+        align-items: center;
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #ff4c3b;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-size: .53rem;
+        z-index: 30;
+        left: -16px;
+        top: -13px;
+        position: relative;
+       
+    }
+
+}

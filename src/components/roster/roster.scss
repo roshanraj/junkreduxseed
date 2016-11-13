@@ -1,0 +1,117 @@
+/*** Animation framework***/
+
+@keyframes hide_frame {
+
+    50%, 95% {
+        transform: translateY(50%);
+    }
+
+    95%, 99%{
+        opacity: 0;
+    }
+
+    100% {
+        z-index: -10000
+    }
+}
+.hide_ani{
+     animation: hide_frame 1s;
+     opacity: 0;
+}
+
+.element {
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #001F3F;
+  }
+  100% {
+    background-color: #FF4136;
+  }
+}
+
+
+@keyframes show_frame {
+
+    0%, 70% {
+        z-index: 10000;
+
+    },
+
+    70%, 95% {
+        opacity: 0;
+    },
+
+    95%, 100%{
+        transform: translateY(-500);
+    }
+}
+.show{
+     animation: show_frame 5s ;
+}
+
+$radius: 4px;
+$pcolor: #1f8ceb;
+.roster{
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    height: 60%;
+    background: #f5f5f5;
+    position: fixed;
+    bottom: 130px;
+    right: 50px;
+    border-radius: $radius + 2;
+    box-shadow: 0px 0px 48px #888;
+    z-index: 10000;
+    opacity: 1;
+    // transition: all 1s;
+    .header{
+        height: 40px;
+        width: 100%;
+        border-top-left-radius: $radius;
+        border-top-right-radius: $radius;
+        background: $pcolor;
+    }
+    .list{
+        overflow: auto;
+
+    }
+    .footer{
+        height: 40px;
+        width: 100%;
+        border-bottom-left-radius: $radius;
+        border-bottom-right-radius: $radius;
+        background: $pcolor;
+    }
+}
+
+
+
+
+
+
+
+.thing-enter {
+  opacity: 0.01;
+  transform: translateY(20%);
+  transition: all 0.4s ease-in;
+}
+
+.thing-enter.thing-enter-active {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: all 0.4s ease-in;
+}
+
+.thing-leave {
+  opacity: 1;
+  transform: translateY(20%);
+  transition: all 0.4s ease-in;
+}
+
+.thing-leave.thing-leave-active {
+  opacity: 0.01;
+}
