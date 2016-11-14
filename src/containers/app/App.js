@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 
 import { connect } from 'react-redux';
 import Header from '../../components/header/Header';
-import Footer from '../../components/footer/Footer';
+
 import Notification from '../notification/Notification'
 
 import { logout } from '../../actions/auth';
@@ -26,7 +26,7 @@ class App extends Component {
         <div className="container appContent">
           {this.props.children}
         </div>
-        <Footer/>
+        
         <Notification/>
       </div>
     );

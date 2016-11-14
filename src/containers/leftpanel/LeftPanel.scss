@@ -2,5 +2,11 @@
 
     border: 2px solid #000;
     background: #888;
-    flex:5;
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    &-body{
+        flex:5;
+        border: 2px solid #009;
+    }
 }

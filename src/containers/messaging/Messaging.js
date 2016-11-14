@@ -13,11 +13,11 @@ export default class Messaging extends Component {
 
     render() {
         return (
-          <div className="messaging">
-            Messaging
-            <RightPanel/>
-            <LeftPanel/>
-          </div>
+            <div className="messaging">
+
+                <LeftPanel/>
+                <RightPanel/>
+            </div>
         );
     }
 }

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {LeftNav} from '../../components/nav';
+import {LeftFooter} from '../../components/footer';
 
 import './LeftPanel.scss';
 
@@ -11,7 +13,12 @@ export default class LeftPanel extends Component {
     render() {
         return (
           <div className="leftpanel">
-            left
+              <LeftNav/>
+              <div className="leftpanel-body">
+                  ----------------------------
+              </div>
+              <LeftFooter/>
+            
           </div>
         );
     }
